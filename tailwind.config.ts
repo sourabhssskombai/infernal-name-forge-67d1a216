@@ -61,7 +61,25 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        infernal: {
+          50: '#fdf2f4',
+          100: '#fce4e9',
+          200: '#fbd5d9',
+          300: '#f4a0b3',
+          400: '#ee758b',
+          500: '#e64464',
+          600: '#d42a47',
+          700: '#b31d39',
+          800: '#961c34',
+          900: '#7d1a32',
+          950: '#46080c',
+        },
+			},
+			fontFamily: {
+				fantasy: ['Fondamento', 'cursive'],
+				gothic: ['MedievalSharp', 'cursive'],
+				serif: ['Playfair Display', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
