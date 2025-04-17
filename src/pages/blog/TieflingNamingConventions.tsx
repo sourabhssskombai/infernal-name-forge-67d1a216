@@ -21,6 +21,7 @@ const TieflingNamingConventions = () => {
         date="April 20, 2025"
         readingTime="5 min read"
         canonicalUrl="https://dndtieflingnamegenerator.com/blog/tiefling-naming-conventions"
+        description="Explore the rich traditions behind tiefling names in D&D 5e, from infernal roots to modern practices. Learn how to create authentic names for your next character."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
             <img 

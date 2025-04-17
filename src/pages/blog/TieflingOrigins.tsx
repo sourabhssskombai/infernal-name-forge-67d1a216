@@ -21,6 +21,7 @@ const TieflingOrigins = () => {
         date="April 20, 2025"
         readingTime="6 min read"
         canonicalUrl="https://dndtieflingnamegenerator.com/blog/tiefling-origins"
+        description="Discover the rich evolution of tieflings from their Planescape origins to their current form in D&D 5e. Learn how their lore, appearance, and game mechanics have transformed through editions."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
             <img 

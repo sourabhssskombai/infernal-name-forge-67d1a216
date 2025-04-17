@@ -21,6 +21,7 @@ const TieflingClassCombos = () => {
         date="April 21, 2025"
         readingTime="8 min read"
         canonicalUrl="https://dndtieflingnamegenerator.com/blog/tiefling-class-combos"
+        description="Discover the most powerful and thematically fitting class options for your tiefling character. From warlocks to sorcerers, paladins to rogues - find your perfect infernal build."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
             <img 

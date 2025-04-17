@@ -8,19 +8,20 @@ const RoleplayingTieflings = () => {
   return (
     <>
       <Helmet>
-        <title>Roleplaying Tieflings in D&D: Embracing the Outsider | Character Guide</title>
+        <title>Roleplaying a Tiefling: Embracing the Outsider | D&D Character Guide</title>
         <meta 
           name="description" 
-          content="Master tiefling roleplaying with our comprehensive guide. Learn to portray social prejudice, infernal heritage, and create compelling character arcs for memorable D&D campaigns." 
+          content="Master the art of roleplaying tiefling characters with insights on handling prejudice, balancing infernal heritage, and creating memorable personality traits for your D&D campaigns." 
         />
         <link rel="canonical" href="https://dndtieflingnamegenerator.com/blog/roleplaying-tieflings" />
       </Helmet>
       
       <BlogPost
         title="Roleplaying a Tiefling: Embracing the Outsider"
-        date="April 22, 2025"
+        date="April 20, 2025"
         readingTime="6 min read"
         canonicalUrl="https://dndtieflingnamegenerator.com/blog/roleplaying-tieflings"
+        description="Master the art of roleplaying tiefling characters with insights on handling prejudice, balancing infernal heritage, and creating memorable personality traits for your D&D campaigns."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
             <img 

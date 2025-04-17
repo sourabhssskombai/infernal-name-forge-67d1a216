@@ -21,6 +21,7 @@ const FamousTieflings = () => {
         date="April 21, 2025"
         readingTime="7 min read"
         canonicalUrl="https://dndtieflingnamegenerator.com/blog/famous-tieflings"
+        description="Explore the most iconic tiefling characters in D&D history, from novels to actual play shows. Learn what makes these infernal-blooded heroes and villains so compelling."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
             <img 

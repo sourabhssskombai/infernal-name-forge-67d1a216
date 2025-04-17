@@ -21,6 +21,7 @@ const TieflingSubraceGuide = () => {
         date="April 21, 2025"
         readingTime="6 min read"
         canonicalUrl="https://dndtieflingnamegenerator.com/blog/tiefling-subrace-guide"
+        description="Explore all tiefling subraces from Asmodeus to Zariel. Learn their unique abilities, physical traits, and roleplaying opportunities with expert tips and build strategies."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
             <img 
