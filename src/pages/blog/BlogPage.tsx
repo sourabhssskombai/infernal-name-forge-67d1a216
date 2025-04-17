@@ -1,6 +1,6 @@
+
 import Layout from '@/components/layout/Layout';
 import { Helmet } from 'react-helmet';
-import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import { BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -12,54 +12,39 @@ const BlogPage = () => {
       id: 'tiefling-naming-conventions',
       title: 'Tiefling Naming Conventions in D&D 5e',
       excerpt: 'Explore the various naming traditions and conventions for Tieflings across different D&D campaign settings.',
-      date: 'April 12, 2023',
-      category: 'Lore',
-      imageUrl: '/blog-tiefling-names.jpg'
+      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 'tiefling-subrace-guide',
       title: 'The Complete Guide to Tiefling Subraces',
       excerpt: 'From Asmodeus to Zariel lineages - understanding the different tiefling subraces and their unique traits.',
-      date: 'March 28, 2023',
-      category: 'Character Building',
-      imageUrl: '/blog-tiefling-subraces.jpg'
+      imageUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 'roleplaying-tieflings',
       title: 'Roleplaying a Tiefling: Embracing the Outsider',
       excerpt: 'Tips and storytelling advice for bringing your tiefling character to life at the gaming table.',
-      date: 'March 15, 2023',
-      category: 'Roleplaying',
-      imageUrl: '/blog-roleplaying-tieflings.jpg'
+      imageUrl: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 'famous-tieflings',
       title: 'Famous Tieflings in D&D Lore and Literature',
       excerpt: 'From Mollymauk Tealeaf to Farideh - exploring the most iconic tiefling characters from novels and actual play shows.',
-      date: 'February 22, 2023',
-      category: 'Lore',
-      imageUrl: '/blog-famous-tieflings.jpg'
+      imageUrl: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 'tiefling-class-combos',
       title: 'Best Class Options for Tiefling Characters',
       excerpt: 'Analyzing the mechanical and thematic synergies between tiefling racial traits and various class options.',
-      date: 'February 8, 2023',
-      category: 'Character Building',
-      imageUrl: '/blog-tiefling-classes.jpg'
+      imageUrl: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80'
     },
     {
       id: 'tiefling-origins',
       title: 'The Origin of Tieflings: A Historical Perspective',
       excerpt: 'Tracing the evolution of tieflings from their introduction in Planescape to their current form in 5th edition.',
-      date: 'January 25, 2023',
-      category: 'D&D History',
-      imageUrl: '/blog-tiefling-origins.jpg'
+      imageUrl: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80'
     }
   ];
-
-  // Categories for filtering (would be interactive in a real implementation)
-  const categories = ['All', 'Lore', 'Character Building', 'Roleplaying', 'D&D History'];
 
   return (
     <Layout>
@@ -80,36 +65,14 @@ const BlogPage = () => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-3 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category}
-                className={`px-4 py-2 rounded-full text-sm ${
-                  category === 'All' 
-                    ? 'bg-infernal-700 text-white' 
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <article key={post.id} className="bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 transition-transform hover:shadow-lg hover:-translate-y-1">
-                <div className="h-48 bg-infernal-100 relative">
-                  <div className="absolute inset-0 bg-gradient-to-b from-infernal-900/20 to-infernal-950/60 flex items-center justify-center">
-                    <BookOpen className="h-12 w-12 text-white/70" />
+                <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${post.imageUrl})` }}>
+                  <div className="absolute inset-0 bg-gradient-to-b from-infernal-900/20 to-infernal-950/60">
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="flex justify-between items-center mb-3">
-                    <span className="text-xs font-medium text-infernal-700 px-2 py-1 bg-infernal-50 rounded-full">
-                      {post.category}
-                    </span>
-                    <span className="text-xs text-gray-500">{post.date}</span>
-                  </div>
                   <h2 className="text-xl font-gothic text-infernal-800 mb-3">{post.title}</h2>
                   <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>
                   <Link

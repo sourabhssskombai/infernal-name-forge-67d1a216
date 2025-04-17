@@ -1,22 +1,29 @@
 
 import Layout from '@/components/layout/Layout';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const TermsOfServicePage = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>Terms of Service | D&D Tiefling Name Generator</title>
+        <meta name="description" content="Terms of service for the D&D Tiefling Name Generator. Read our policies regarding the use of our service, intellectual property rights, and user responsibilities." />
+        <link rel="canonical" href="https://dndtieflingnamegenerator.com/terms-of-service" />
+      </Helmet>
+      
       <div className="bg-gradient-to-b from-infernal-950 to-infernal-900 text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl md:text-4xl font-gothic mb-4 text-center">Terms of Service</h1>
           <p className="text-lg max-w-3xl mx-auto text-center opacity-90">
-            Last Updated: April 16, 2023
+            Last Updated: April 16, 2025
           </p>
         </div>
       </div>
 
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="prose prose-lg prose-infernal mx-auto">
+          <div className="prose prose-lg prose-headings:font-gothic prose-headings:text-infernal-800 prose-a:text-infernal-700 prose-a:no-underline hover:prose-a:underline mx-auto">
             <p>
               Welcome to DnD Tiefling Name Generator! These Terms of Service ("Terms") govern your use of our website 
               located at https://dndtieflingnamegenerator.com/ ("Website") and all related services. Please read these Terms 
