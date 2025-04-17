@@ -1,12 +1,13 @@
 
 import React from 'react';
+import Layout from '@/components/layout/Layout';
 import BlogPost from '@/components/blog/BlogPost';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 const TieflingNamingConventions = () => {
   return (
-    <>
+    <Layout>
       <Helmet>
         <title>Tiefling Naming Conventions in D&D 5e | Comprehensive Guide</title>
         <meta 
@@ -20,7 +21,6 @@ const TieflingNamingConventions = () => {
         title="Tiefling Naming Conventions in D&D 5e"
         date="April 20, 2025"
         readingTime="5 min read"
-        canonicalUrl="https://dndtieflingnamegenerator.com/blog/tiefling-naming-conventions"
         description="Explore the rich traditions behind tiefling names in D&D 5e, from infernal roots to modern practices. Learn how to create authentic names for your next character."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
@@ -236,7 +236,7 @@ const TieflingNamingConventions = () => {
           </article>
         }
       />
-    </>
+    </Layout>
   );
 };
 

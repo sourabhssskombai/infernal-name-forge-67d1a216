@@ -1,14 +1,15 @@
 
 import React from 'react';
+import Layout from '@/components/layout/Layout';
 import BlogPost from '@/components/blog/BlogPost';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 const FamousTieflings = () => {
   return (
-    <>
+    <Layout>
       <Helmet>
-        <title>Famous Tieflings in D&D Lore and Literature | Iconic Characters & Their Stories</title>
+        <title>Famous Tieflings in D&D Lore and Literature | Iconic Characters</title>
         <meta 
           name="description" 
           content="Explore the most iconic tiefling characters in D&D history, from novels to actual play shows. Learn what makes these infernal-blooded heroes and villains so compelling." 
@@ -20,7 +21,6 @@ const FamousTieflings = () => {
         title="Famous Tieflings in D&D Lore and Literature"
         date="April 21, 2025"
         readingTime="7 min read"
-        canonicalUrl="https://dndtieflingnamegenerator.com/blog/famous-tieflings"
         description="Explore the most iconic tiefling characters in D&D history, from novels to actual play shows. Learn what makes these infernal-blooded heroes and villains so compelling."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
@@ -254,7 +254,7 @@ const FamousTieflings = () => {
           </article>
         }
       />
-    </>
+    </Layout>
   );
 };
 

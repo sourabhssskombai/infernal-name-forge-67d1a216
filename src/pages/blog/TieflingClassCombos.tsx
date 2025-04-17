@@ -1,14 +1,15 @@
 
 import React from 'react';
+import Layout from '@/components/layout/Layout';
 import BlogPost from '@/components/blog/BlogPost';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 const TieflingClassCombos = () => {
   return (
-    <>
+    <Layout>
       <Helmet>
-        <title>Best Class Options for Tiefling Characters in D&D 5e | Optimization Guide</title>
+        <title>Best Class Options for Tiefling Characters | D&D 5e Build Guide</title>
         <meta 
           name="description" 
           content="Discover the most powerful and thematically fitting class options for your tiefling character. From warlocks to sorcerers, paladins to rogues - find your perfect infernal build." 
@@ -20,7 +21,6 @@ const TieflingClassCombos = () => {
         title="Best Class Options for Tiefling Characters"
         date="April 21, 2025"
         readingTime="8 min read"
-        canonicalUrl="https://dndtieflingnamegenerator.com/blog/tiefling-class-combos"
         description="Discover the most powerful and thematically fitting class options for your tiefling character. From warlocks to sorcerers, paladins to rogues - find your perfect infernal build."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
@@ -365,7 +365,7 @@ const TieflingClassCombos = () => {
           </article>
         }
       />
-    </>
+    </Layout>
   );
 };
 

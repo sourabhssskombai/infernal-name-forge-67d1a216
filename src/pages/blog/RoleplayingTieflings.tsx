@@ -1,12 +1,13 @@
 
 import React from 'react';
+import Layout from '@/components/layout/Layout';
 import BlogPost from '@/components/blog/BlogPost';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 const RoleplayingTieflings = () => {
   return (
-    <>
+    <Layout>
       <Helmet>
         <title>Roleplaying a Tiefling: Embracing the Outsider | D&D Character Guide</title>
         <meta 
@@ -20,7 +21,6 @@ const RoleplayingTieflings = () => {
         title="Roleplaying a Tiefling: Embracing the Outsider"
         date="April 20, 2025"
         readingTime="6 min read"
-        canonicalUrl="https://dndtieflingnamegenerator.com/blog/roleplaying-tieflings"
         description="Master the art of roleplaying tiefling characters with insights on handling prejudice, balancing infernal heritage, and creating memorable personality traits for your D&D campaigns."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
@@ -364,7 +364,7 @@ const RoleplayingTieflings = () => {
           </article>
         }
       />
-    </>
+    </Layout>
   );
 };
 

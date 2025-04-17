@@ -11,19 +11,12 @@ interface BlogPostProps {
   date: string;
   content: React.ReactNode;
   readingTime?: string;
-  canonicalUrl: string;
   description: string;
 }
 
-const BlogPost = ({ title, date, content, readingTime = '8 min read', canonicalUrl, description }: BlogPostProps) => {
+const BlogPost = ({ title, date, content, readingTime = '8 min read', description }: BlogPostProps) => {
   return (
     <article className="max-w-4xl mx-auto px-4 py-8">
-      <Helmet>
-        <title>{title} | D&D Tiefling Name Generator</title>
-        <meta name="description" content={description} />
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
-      
       <div className="mb-8">
         <Link 
           to="/blog" 
@@ -66,21 +59,6 @@ const BlogPost = ({ title, date, content, readingTime = '8 min read', canonicalU
         >
           <Link to="/">Generate Tiefling Name</Link>
         </Button>
-      </div>
-
-      <div className="mt-8 text-sm text-gray-500">
-        <p>
-          Canonical URL:{' '}
-          <a 
-            href={canonicalUrl}
-            className="text-infernal-700 hover:text-infernal-900 inline-flex items-center"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {canonicalUrl}
-            <ExternalLink className="h-3 w-3 ml-1" />
-          </a>
-        </p>
       </div>
     </article>
   );
