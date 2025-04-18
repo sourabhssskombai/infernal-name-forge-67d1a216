@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
@@ -23,26 +23,24 @@ const queryClient = new QueryClient();
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <BrowserRouter>
-        <Toaster />
-        <Sonner />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/tiefling-naming-conventions" element={<TieflingNamingConventions />} />
-          <Route path="/blog/tiefling-subrace-guide" element={<TieflingSubraceGuide />} />
-          <Route path="/blog/roleplaying-tieflings" element={<RoleplayingTieflings />} />
-          <Route path="/blog/famous-tieflings" element={<FamousTieflings />} />
-          <Route path="/blog/tiefling-class-combos" element={<TieflingClassCombos />} />
-          <Route path="/blog/tiefling-origins" element={<TieflingOrigins />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <Toaster />
+      <Sonner />
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/tiefling-naming-conventions" element={<TieflingNamingConventions />} />
+        <Route path="/blog/tiefling-subrace-guide" element={<TieflingSubraceGuide />} />
+        <Route path="/blog/roleplaying-tieflings" element={<RoleplayingTieflings />} />
+        <Route path="/blog/famous-tieflings" element={<FamousTieflings />} />
+        <Route path="/blog/tiefling-class-combos" element={<TieflingClassCombos />} />
+        <Route path="/blog/tiefling-origins" element={<TieflingOrigins />} />
+        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </TooltipProvider>
   </QueryClientProvider>
 );
