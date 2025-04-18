@@ -1,12 +1,11 @@
 import React from 'react';
-import Layout from '@/components/layout/Layout';
 import BlogPost from '@/components/blog/BlogPost';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 const TieflingOrigins = () => {
   return (
-    <Layout>
+    <>
       <Helmet>
         <title>The Origin of Tieflings: A Historical Perspective | D&D Race Evolution</title>
         <meta 
@@ -15,14 +14,13 @@ const TieflingOrigins = () => {
         />
         <link rel="canonical" href="https://dndtieflingnamegenerator.com/blog/tiefling-origins" />
       </Helmet>
-      
       <BlogPost
         title="The Origin of Tieflings: A Historical Perspective"
         date="April 20, 2024"
         readingTime="8 min read"
         description="Tracing the evolution of tieflings from Planescape to their current 5e form."
         content={
-          <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
+          <>
             <img 
               src="https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?q=80&w=1200&auto=format&fit=crop"
               alt="Ancient book with infernal symbols representing tiefling history"
@@ -339,7 +337,7 @@ const TieflingOrigins = () => {
           </>
         }
       />
-    </Layout>
+    </>
   );
 };
 
