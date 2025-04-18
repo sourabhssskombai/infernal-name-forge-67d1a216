@@ -1,3 +1,4 @@
+
 import BlogPost from "@/components/blog/BlogPost";
 import { Helmet } from "react-helmet";
 
@@ -9,7 +10,7 @@ export default function TieflingClassCombos() {
       </Helmet>
       <BlogPost
         title="Best Class Options for Tiefling Characters"
-        date="April 16, 2024"
+        date="April 16, 2025"
         readingTime="7 min read"
         description="Analyze the mechanical and thematic synergies between tiefling racial traits and various class options."
         content={

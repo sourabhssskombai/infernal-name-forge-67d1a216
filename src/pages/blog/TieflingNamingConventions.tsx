@@ -1,3 +1,4 @@
+
 import BlogPost from "@/components/blog/BlogPost";
 import { Helmet } from "react-helmet";
 
@@ -9,7 +10,7 @@ export default function TieflingNamingConventions() {
       </Helmet>
       <BlogPost
         title="Tiefling Naming Conventions in D&D 5e"
-        date="March 15, 2024"
+        date="April 15, 2025"
         readingTime="7 min read"
         description="Explore the various naming traditions and conventions for Tieflings across different D&D campaign settings."
         content={

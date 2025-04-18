@@ -1,3 +1,4 @@
+
 import BlogPost from "@/components/blog/BlogPost";
 import { Helmet } from "react-helmet";
 
@@ -9,7 +10,7 @@ export default function FamousTieflings() {
       </Helmet>
       <BlogPost
         title="Famous Tieflings in D&D Lore and Literature"
-        date="April 14, 2024"
+        date="April 14, 2025"
         readingTime="10 min read"
         description="Iconic tiefling characters from D&D novels and actual play, including Mollymauk Tealeaf and Farideh."
         content={

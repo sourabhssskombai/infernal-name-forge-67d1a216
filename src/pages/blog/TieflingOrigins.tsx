@@ -16,7 +16,7 @@ const TieflingOrigins = () => {
       </Helmet>
       <BlogPost
         title="The Origin of Tieflings: A Historical Perspective"
-        date="April 20, 2024"
+        date="April 20, 2025"
         readingTime="8 min read"
         description="Tracing the evolution of tieflings from Planescape to their current 5e form."
         content={

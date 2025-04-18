@@ -1,3 +1,4 @@
+
 import BlogPost from "@/components/blog/BlogPost";
 import { Helmet } from "react-helmet";
 
@@ -9,7 +10,7 @@ export default function TieflingSubraceGuide() {
       </Helmet>
       <BlogPost
         title="The Complete Guide to Tiefling Subraces"
-        date="April 2, 2024"
+        date="April 2, 2025"
         readingTime="8 min read"
         description="Understand the different tiefling subraces, their lineages, and unique traits, from Asmodeus to Zariel and beyond."
         content={

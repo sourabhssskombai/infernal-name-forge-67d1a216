@@ -1,3 +1,4 @@
+
 import BlogPost from "@/components/blog/BlogPost";
 import { Helmet } from "react-helmet";
 
@@ -9,7 +10,7 @@ export default function RoleplayingTieflings() {
       </Helmet>
       <BlogPost
         title="Roleplaying a Tiefling: Embracing the Outsider"
-        date="April 8, 2024"
+        date="April 8, 2025"
         readingTime="9 min read"
         description="Tips and storytelling advice for bringing your tiefling character to life at the gaming table."
         content={
