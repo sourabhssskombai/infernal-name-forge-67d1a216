@@ -1,4 +1,3 @@
-
 import Layout from '@/components/layout/Layout';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
@@ -23,7 +22,7 @@ const PrivacyPolicyPage = () => {
 
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="prose prose-lg prose-headings:font-gothic prose-headings:text-infernal-800 prose-a:text-infernal-700 prose-a:no-underline hover:prose-a:underline mx-auto">
+          <div className="prose prose-lg prose-headings:font-gothic prose-headings:text-infernal-800 prose-a:text-infernal-700 prose-a:no-underline hover:prose-a:underline mx-auto bg-white rounded-xl p-8 shadow border">
             <p>
               At DnD Tiefling Name Generator, we respect your privacy and are committed to protecting your personal data. 
               This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.

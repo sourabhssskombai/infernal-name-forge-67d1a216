@@ -64,17 +64,18 @@ const BlogPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
-              <article key={post.id} className="relative bg-white rounded-lg overflow-hidden shadow-md border border-gray-200 transition-transform hover:shadow-lg hover:-translate-y-1 group">
-                <div
-                  className="relative h-48"
-                >
+              <article
+                key={post.id}
+                className="relative bg-white rounded-xl overflow-hidden shadow-md border border-gray-100 group transition-transform hover:shadow-xl hover:-translate-y-1"
+              >
+                <div className="h-48 w-full">
                   <img
                     src={post.imageUrl}
                     alt={post.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-infernal-900/10 group-hover:bg-infernal-950/30 transition-colors"></div>
                 </div>
+                {/* Remove broken overlay */}
                 <div className="p-6">
                   <h2 className="text-xl font-gothic text-infernal-800 mb-3">{post.title}</h2>
                   <p className="text-gray-600 text-sm mb-4">{post.excerpt}</p>

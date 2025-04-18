@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '@/components/layout/Layout';
 import BlogPost from '@/components/blog/BlogPost';
@@ -19,9 +18,9 @@ const TieflingOrigins = () => {
       
       <BlogPost
         title="The Origin of Tieflings: A Historical Perspective"
-        date="April 20, 2025"
-        readingTime="6 min read"
-        description="Discover the rich evolution of tieflings from their Planescape origins to their current form in D&D 5e. Learn how their lore, appearance, and game mechanics have transformed through editions."
+        date="April 20, 2024"
+        readingTime="8 min read"
+        description="Tracing the evolution of tieflings from Planescape to their current 5e form."
         content={
           <article className="prose prose-lg max-w-none prose-headings:text-infernal-900 prose-a:text-infernal-700 hover:prose-a:text-infernal-800">
             <img 
@@ -337,7 +336,7 @@ const TieflingOrigins = () => {
                 </svg>
               </Link>
             </div>
-          </article>
+          </>
         }
       />
     </Layout>
