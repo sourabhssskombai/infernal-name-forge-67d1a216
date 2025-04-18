@@ -16,6 +16,11 @@ const vibrantBg = "bg-[linear-gradient(111.4deg,_rgba(238,113,113,1)_1%,_rgba(24
 const vibrantDropdown =
   "from-pink-500 via-orange-400 to-yellow-400 bg-gradient-to-r !border-pink-400 focus:!ring-pink-300 text-white shadow-lg drop-shadow-lg";
 
+const vibrantSliderTrack =
+  "h-3 rounded-full bg-gradient-to-r from-pink-500 via-orange-400 to-yellow-300 shadow-lg";
+const vibrantSliderThumb =
+  "h-6 w-6 bg-gradient-to-br from-pink-400 via-orange-300 to-yellow-200 border-2 border-white shadow-lg ring-2 ring-pink-200 focus:ring-4 focus:ring-pink-300 hover:scale-110 transition-transform";
+
 const NameGenerator = () => {
   const [count, setCount] = useState(5);
   const [gender, setGender] = useState<"male" | "female" | "any">("any");
@@ -76,8 +81,19 @@ const NameGenerator = () => {
               max={10}
               step={1}
               onValueChange={(value) => setCount(value[0])}
-              className="flex-grow accent-[--accent-bright] animate-fade-in"
-            />
+              className="flex-grow animate-fade-in"
+              style={{ height: 26 }}
+            >
+              <div className={vibrantSliderTrack + " w-full relative"}>
+                <div className="absolute left-0 top-0 h-full" style={{
+                  width: `${((count - 1) / 9) * 100}%` || "0%",
+                  background:
+                    "linear-gradient(90deg, #ec4899 0%, #f59e42 50%, #fde68a 100%)",
+                  borderRadius: "inherit"
+                }} />
+              </div>
+              <span className={vibrantSliderThumb} />
+            </Slider>
             <span className="w-8 text-center font-gothic text-xl text-white">{count}</span>
           </div>
         </div>
