@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { generateNames } from '@/utils/nameGenerator';
 import { Button } from '@/components/ui/button';
@@ -14,6 +13,8 @@ interface NameResult {
 }
 
 const vibrantBg = "bg-[linear-gradient(111.4deg,_rgba(238,113,113,1)_1%,_rgba(246,215,148,1)_58%)]";
+const vibrantDropdown =
+  "from-pink-500 via-orange-400 to-yellow-400 bg-gradient-to-r !border-pink-400 focus:!ring-pink-300 text-white shadow-lg drop-shadow-lg";
 
 const NameGenerator = () => {
   const [count, setCount] = useState(5);
@@ -53,7 +54,7 @@ const NameGenerator = () => {
       style={{
         boxShadow: "0 6px 48px 0 rgba(246, 76, 114, 0.16), 0 1.5px 10px rgba(249, 183, 70, 0.10)",
         border: "1.5px solid rgba(246,113,113,0.09)",
-        backdropFilter: "blur(1px)"
+        backdropFilter: "blur(1px)",
       }}
     >
       <div className="mb-8 text-center">
@@ -86,17 +87,33 @@ const NameGenerator = () => {
             value={gender}
             onValueChange={(value: "male" | "female" | "any") => setGender(value)}
           >
-            <SelectTrigger className="w-full text-lg bg-white/80 border-2 border-pink-300 focus:ring-4 focus:ring-pink-200 rounded-lg px-4 py-2 font-gothic shadow-[0_2px_8px_rgba(217,70,239,0.05)]">
+            <SelectTrigger
+              className={`w-full text-lg border-2 px-4 py-2 font-gothic rounded-lg ${vibrantDropdown}`}
+              style={{
+                backgroundImage:
+                  "linear-gradient(111.4deg, rgba(238,113,113,1) 10%, rgba(246,215,148,1) 90%)",
+                color: "#fff",
+                border: "2px solid #fb7185",
+                boxShadow: "0 0 0 3px rgba(255,191,89,0.13)",
+              }}
+            >
               <SelectValue placeholder="Select gender" />
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="male">Male</SelectItem>
-              <SelectItem value="female">Female</SelectItem>
-              <SelectItem value="any">Any</SelectItem>
+            <SelectContent
+              className="z-50 bg-gradient-to-tr from-pink-500 via-orange-400 to-yellow-300 text-white shadow-xl border-2 border-pink-400"
+              style={{
+                background:
+                  "linear-gradient(120deg, rgba(238,113,113,0.97) 0%, rgba(246,215,148,0.98) 100%)",
+                color: "#fff",
+                border: "2px solid #fb7185",
+              }}
+            >
+              <SelectItem value="male" className="!text-white hover:bg-white/10">Male</SelectItem>
+              <SelectItem value="female" className="!text-white hover:bg-white/10">Female</SelectItem>
+              <SelectItem value="any" className="!text-white hover:bg-white/10">Any</SelectItem>
             </SelectContent>
           </Select>
         </div>
-        {/* No "Include images" checkbox here */}
       </div>
 
       <div className="flex justify-center mb-8 animate-scale-in">
@@ -161,4 +178,3 @@ const NameGenerator = () => {
 };
 
 export default NameGenerator;
-
