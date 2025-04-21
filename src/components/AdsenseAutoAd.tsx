@@ -5,9 +5,8 @@ const AdsenseAutoAd = () => {
   const adRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (window.adsbygoogle && (window as any).adsbygoogle.loaded) {
+    if (window.adsbygoogle && window.adsbygoogle.loaded) {
       try {
-        // @ts-ignore
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch (e) {
         // Silently ignore
@@ -24,7 +23,6 @@ const AdsenseAutoAd = () => {
         script.crossOrigin = "anonymous";
         document.head.appendChild(script);
         script.onload = () => {
-          // @ts-ignore
           (window.adsbygoogle = window.adsbygoogle || []).push({});
         };
       }
