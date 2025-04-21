@@ -1,7 +1,7 @@
 
 /// <reference types="vite/client" />
 
-// Add this block to let TypeScript know about window.adsbygoogle
+// Fix: adsbygoogle is an array of any, per Google's API (see https://developers.google.com/publisher-tag/reference)
 interface Window {
-  adsbygoogle?: { push: ({}: any) => void; loaded?: boolean }[];
+  adsbygoogle?: any[];
 }
