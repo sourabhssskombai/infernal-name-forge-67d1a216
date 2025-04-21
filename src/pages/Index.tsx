@@ -1,14 +1,17 @@
-
 import Layout from '@/components/layout/Layout';
 import NameGenerator from '@/components/generator/NameGenerator';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { Flame, BookOpen, Lightbulb, HelpCircle, Check } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import AdsenseAutoAd from '@/components/AdsenseAutoAd';
 
 const Index = () => {
   return (
     <Layout>
+      {/* AD: Above Hero */}
+      <AdsenseAutoAd />
+
       {/* Hero Section with Generator */}
       <section className="bg-gradient-to-b from-infernal-950 to-infernal-900 text-white py-16 md:py-20 relative">
         <div className="absolute inset-0 bg-[url('/tiefling-bg.jpg')] bg-cover bg-center opacity-20 mix-blend-overlay"></div>
@@ -41,6 +44,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* AD: Below Hero */}
+      <AdsenseAutoAd />
 
       {/* How It Works */}
       <section id="how-it-works" className="py-16 bg-gradient-to-b from-white to-gray-50">
